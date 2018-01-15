@@ -13,8 +13,12 @@ import org.springframework.web.client.RestTemplate
 open class JAlgoArenaProblemsApp {
     @Bean
     open fun restTemplate() = RestTemplate()
+
+    companion object {
+        @JvmStatic fun main(args: Array<String>) {
+            SpringApplication.run(JAlgoArenaProblemsApp::class.java, *args)
+        }
+    }
 }
 
-fun main(args: Array<String>) {
-    SpringApplication.run(JAlgoArenaProblemsApp::class.java, *args)
-}
+

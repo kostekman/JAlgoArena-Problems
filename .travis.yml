@@ -14,12 +14,8 @@ cache:
 before_deploy:
 - ./gradlew releaseZip
 deploy:
-  provider: releases
-  api_key:
-    secure: B2umkw5FbcDWShouBagt5e1yhcZHmsGfYDiSCjonHop9S44WFzyOxGSLifGu4sPWl61zQJ88JEmT0G70E8YWdbldGiJdiZ6ow1/40dCClX4tiSImJiWpvLYbbs9hXzFe3ePvohGp0Sx6yA/adZwqUV9v+0fU9ZZpn8xk2IWRV0QIYYc5rWthSnS2G9SfB161W/URR/Cxtr1FU1Itgt5eJY40ndgVRCdwAux1USfU6e8sK8kCoedSu1dAy4PkjdH0J8xumHcWxEbtNhSb0NE4xZdV2UIEkKGduISOf9tJvuJxMTqyaJqxwI2gPTWRUexUZd6Sm4amRSl6KKM4ClwKSh9GBDockPwAK4X2WNUSarnWXY9m1IQzrdx/6+bYEnTxvnIg+38FxP3S1Npx4mLqDTHbqNjSnSsEcGDSKASJQAQJHc7drGqsqIgMaJd3p+lu3NxDtZjru5woU7xmieUTUWMlM2JSQRvX+7GDGOfpONstM13kgT2ZykJ7xdtRHm5rRZEGPjQpWkUggkoJ32Hc9Q6NKWBr+R7bbp9FHpj3LM8N3WZMzaan64FkoCR74dt7t+7lNVHoHH94BVbMj72xSezCmj6fQWr3+O5hIRR8g31KTT7cxg4gA6be80VM9COOYcSIzGEfZld9hHDdgXvudc5x8QNgI+w42Co1gZe+sGM=
-  file_glob: true
-  file: "./build/libs/JAlgoArena-Problems-*.zip"
-  skip_cleanup: true
+  provider: heroku
+  api_key: e8b086d1-b5ca-4504-8baf-7f55a085b37d
   on:
     repo: spolnik/JAlgoArena-Problems
-    tags: true
+    tags: false
