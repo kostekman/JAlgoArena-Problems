@@ -16,6 +16,7 @@ before_deploy:
 deploy:
   provider: heroku
   api_key: e8b086d1-b5ca-4504-8baf-7f55a085b37d
+  app: jalgoarena-problems-koscinsa
   on:
-    repo: spolnik/JAlgoArena-Problems
+    repo: kostekman/JAlgoArena-Problems
     tags: false

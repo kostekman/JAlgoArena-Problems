@@ -30,6 +30,7 @@ mainClassName = 'com.jalgoarena.JAlgoArenaProblemsApp'
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 distDocker {
@@ -50,7 +51,9 @@ dependencies {
             'org.springframework.cloud:spring-cloud-starter-eureka',
             "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
             'org.jetbrains.xodus:xodus-openAPI:1.0.2',
-            'org.jetbrains.xodus:xodus-entity-store:1.0.2'
+            'org.jetbrains.xodus:xodus-entity-store:1.0.2',
+            'io.springfox:springfox-swagger2:2.8.0',
+            'io.springfox:springfox-swagger-ui:2.8.0'
 
     testCompile 'junit:junit:4.12',
             "com.winterbe:expekt:0.5.0",
